@@ -8,7 +8,26 @@ def load_data(file_path):
 
 # Interface do Streamlit
 st.title("Filtro de Fechaduras Digitais")
-file_path = st.file_uploader("caracteristicas_fechaduras.xlsx", type=["xlsx"])
+#file_path = st.file_uploader("caracteristicas_fechaduras.xlsx", type=["xlsx"])
+# Caminho relativo para a planilha no repositório
+file_path = 'caracteristicas_fechaduras.xlsx'
+
+# Carregar a planilha
+df = pd.read_excel(file_path)
+
+# Exibir a tabela no Streamlit
+st.write(df)
+
+# Caso a planilha der erro use esse para carregar o arquivo
+# Permite ao usuário fazer upload do arquivo
+file = st.file_uploader("Carregar características da fechadura", type=["xlsx"])
+
+# Se um arquivo for carregado, leia-o
+#if file is not None:
+#    df = pd.read_excel(file)
+#    st.write(df)
+#else:
+#    st.warning("Por favor, carregue um arquivo Excel!")
 
 if file_path:
     # Carrega os dados da planilha
