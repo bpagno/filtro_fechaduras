@@ -47,10 +47,10 @@ if file_path:
             filtros[col] = selected  # Salva o filtro aplicado para a coluna
 
     # Adiciona botão para executar os filtros
-    if st.sidebar.button("Executar Filtro"):
+    #if st.sidebar.button("Executar Filtro"):
         # Aplica os filtros de forma iterativa
         resultado = data.copy()  # Copia a tabela original
-        for col, valores in filtros.items():
+        #for col, valores in filtros.items():
             resultado = resultado[resultado[col].isin(valores)]  # Filtra linha por linha
 
         # Exibir os resultados filtrados
