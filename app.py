@@ -35,7 +35,7 @@ if file_path:
 
     # Exibe os dados carregados (opcional, para verificação)
     st.write("Visualização inicial da planilha:")
-    st.dataframe(data)
+    #st.dataframe(data)
 
     # Criar os filtros
     st.sidebar.header("Filtros")
