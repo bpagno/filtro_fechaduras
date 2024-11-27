@@ -16,7 +16,7 @@ file_path = 'caracteristicas_fechaduras.xlsx'
 df = pd.read_excel(file_path)
 
 # Exibir a tabela no Streamlit
-st.write(df)
+#st.write(df)
 
 # Caso a planilha der erro use esse para carregar o arquivo
 # Permite ao usuário fazer upload do arquivo
