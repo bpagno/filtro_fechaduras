@@ -20,7 +20,7 @@ st.write(df)
 
 # Caso a planilha der erro use esse para carregar o arquivo
 # Permite ao usuário fazer upload do arquivo
-file = st.file_uploader("Carregar características da fechadura", type=["xlsx"])
+#file = st.file_uploader("Carregar características da fechadura", type=["xlsx"])
 
 # Se um arquivo for carregado, leia-o
 #if file is not None:
